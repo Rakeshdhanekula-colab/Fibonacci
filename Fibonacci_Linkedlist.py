@@ -51,7 +51,7 @@ for i  in range(100):
         t = Fibonacci[i-2]+Fibonacci[i-1]
         Fibonacci.append(t)
         
-x = fibonacci(Fibonacci, x)
-print(x)
+        
+fibonacci(Fibonacci, x)
 
 
