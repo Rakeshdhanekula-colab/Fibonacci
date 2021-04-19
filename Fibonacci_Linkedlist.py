@@ -52,6 +52,7 @@ for i  in range(100):
         Fibonacci.append(t)
         
         
-fibonacci(Fibonacci, x)
+a = fibonacci(Fibonacci, x)
+print(a)
 
 
