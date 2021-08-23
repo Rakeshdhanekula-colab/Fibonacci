@@ -31,4 +31,4 @@ jobs:
             chmod +x $GITHUB_WORKSPACE/bin/rosa
     - name: test rosa
       run: |-
-            rosa --help
+            $GITHUB_WORKSPACE/bin/rosa --help
