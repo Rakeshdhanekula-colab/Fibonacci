@@ -28,4 +28,7 @@ jobs:
             mkdir -p $GITHUB_WORKSPACE/bin
             curl -o rosa.tar.gz https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/rosa/latest/rosa-linux.tar.gz
             tar xvf rosa.tar.gz -C $GITHUB_WORKSPACE/bin
-            chmod +x $GITHUB_WORKSPACE/bin/oc
+            chmod +x $GITHUB_WORKSPACE/bin/rosa
+    - name: test rosa
+      run: |-
+            rosa --help
