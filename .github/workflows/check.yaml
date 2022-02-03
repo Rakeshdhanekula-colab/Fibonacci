@@ -1,0 +1,28 @@
+name: 'check'
+env:
+  check: ${{ secrets.test }}
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+
+jobs:
+  test:
+    name: 'test'
+    runs-on: ubuntu-latest
+    environment: production
+
+
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v2
+    
+    - name: download ROSA client
+      run: |-
+        echo ${{ env.check }}
