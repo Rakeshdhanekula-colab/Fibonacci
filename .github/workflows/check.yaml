@@ -1,6 +1,6 @@
 name: 'check'
 env:
-   check: ${{ secrets.test }}
+  check: ${{ secrets.test }}
 on:
   push:
     branches:
@@ -9,7 +9,7 @@ on:
 
 jobs:
   test:
-    name: 'test'
+     name: 'test'
     runs-on: ubuntu-latest
     environment: production
 
