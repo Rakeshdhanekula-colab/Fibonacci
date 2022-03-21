@@ -1,6 +1,6 @@
 name: 'check'
 env:
-  check: ${{ secrets.test }}
+   check: ${{ secrets.test }}
 on:
   push:
     branches:
